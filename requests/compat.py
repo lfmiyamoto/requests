@@ -28,7 +28,8 @@ is_py3 = (_ver[0] == 3)
 try:
     import simplejson as json
 except ImportError:
-    import json
+    #import json
+    import orjson as json
 
 # ---------
 # Specifics
